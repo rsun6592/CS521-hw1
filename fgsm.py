@@ -17,7 +17,7 @@ N = nn.Sequential(nn.Linear(10, 10, bias=False),
 x = torch.rand((1,10)) # the first dimension is the batch size; the following dimensions the actual dimension of the data
 x.requires_grad_() # this is required so we can compute the gradient w.r.t x
 
-t = 0 # target class
+t = 1 # target class
 
 epsReal = 0.5  #depending on your data this might be large or small
 eps = epsReal - 1e-7 # small constant to offset floating-point erros
